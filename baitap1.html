@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bt1.css">
+</head>
+<script>
+        function cong(){
+        let p = document.getElementById("so1");
+        let r = document.getElementById("so2");
+        var y = Number(p.value) + Number(r.value);
+        alert(y);
+    }
+    function tru(){
+        let p = document.getElementById("so1");
+        let r = document.getElementById("so2");
+        var y = Number(p.value) - Number(r.value);
+        alert(y);
+    }
+    function nhan(){
+        let p = document.getElementById("so1");
+        let r = document.getElementById("so2");
+        var y = Number(p.value) * Number(r.value);
+        alert(y);
+    }
+    function chia(){
+        let p = document.getElementById("so1");
+        let r = document.getElementById("so2");
+        var y = Number(p.value) / Number(r.value);
+        alert(y);
+    }
+    function phanTram(){
+        let 
+    }
+</script>
+<body>
+    <div class="hinh">
+        <h1>CÔNG CỤ TÍNH TOÁN</h1>
+       <div class="thanh">
+        <input type="number" id="so1">
+        <input type="number"id="so2"><br><br>
+       </div>
+            <button onclick="cong()" class="pheptinh">+</button>
+            <button onclick="tru()" class="pheptinh">-</button>
+            <button onclick="nhan()" class="pheptinh">*</button>
+            <button onclick="chia()" class="pheptinh">/</button>
+    </div>
+</body>
+</html>

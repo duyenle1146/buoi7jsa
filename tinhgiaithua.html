@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tgt.css">
+</head>
+<script>
+    function giaiThua(){
+        let n = Number(document.getElementById("so").value);
+        let ketqua = 1;
+        for (let i=1; i<n; i++){
+            ketqua = ketqua*i;
+        };
+        alert(ketqua);
+    }
+</script>
+<body>
+   <div class="giaithua">
+    <h1>TÍNH GIAI THỪA</h1>
+    <div class="tinh">
+    Nhập một số: <input type="number" id="so">
+    <button onclick="giaiThua()">kết quả</button>
+    </div>
+   </div>
+</body>
+</html>

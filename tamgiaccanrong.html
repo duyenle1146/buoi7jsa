@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function tamGiacCanRong(){
+        let N = prompt("Nhập độ cao của tam giác");
+        N = parseInt(N);
+        for (let i = 0; i < N - 1; i++){
+            for (let j = 1; j <= N + i; j++){
+                if(j == N - i || j == N + i){
+                document.writeln("*");
+            }
+                else{
+                document.writeln("_");
+            }
+        }
+        document.writeln("</br>");
+       }
+       for (let i = 1; i <= 2 * N - 1; i++){
+        document.writeln("*");
+       }
+    }
+</script>
+<body>
+    <h1>bài tập tam giác </h1><br>
+    <button onclick="tamGiacCanRong()">tamgiaccanrong</button>
+</body>
+</html>
